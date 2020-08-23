@@ -34,8 +34,8 @@
             System.Windows.Forms.Label addressLabel;
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label genderLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label CountryLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.databaseDataSet = new LocalDB.DatabaseDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new LocalDB.DatabaseDataSetTableAdapters.CustomersTableAdapter();
@@ -65,6 +65,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Countrytextbox = new System.Windows.Forms.TextBox();
             fullNameLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -122,6 +123,15 @@
             genderLabel.Size = new System.Drawing.Size(45, 13);
             genderLabel.TabIndex = 11;
             genderLabel.Text = "Gender:";
+            // 
+            // CountryLabel
+            // 
+            CountryLabel.AutoSize = true;
+            CountryLabel.Location = new System.Drawing.Point(215, 96);
+            CountryLabel.Name = "CountryLabel";
+            CountryLabel.Size = new System.Drawing.Size(43, 13);
+            CountryLabel.TabIndex = 9;
+            CountryLabel.Text = "Country";
             // 
             // databaseDataSet
             // 
@@ -365,14 +375,12 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "Gender";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
-            // CountryLabel
+            // Countrytextbox
             // 
-            CountryLabel.AutoSize = true;
-            CountryLabel.Location = new System.Drawing.Point(215, 96);
-            CountryLabel.Name = "CountryLabel";
-            CountryLabel.Size = new System.Drawing.Size(43, 13);
-            CountryLabel.TabIndex = 9;
-            CountryLabel.Text = "Country";
+            this.Countrytextbox.Location = new System.Drawing.Point(273, 96);
+            this.Countrytextbox.Name = "Countrytextbox";
+            this.Countrytextbox.Size = new System.Drawing.Size(104, 20);
+            this.Countrytextbox.TabIndex = 10;
             // 
             // Form1
             // 
@@ -388,6 +396,7 @@
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(CountryLabel);
             this.Controls.Add(phoneLabel);
+            this.Controls.Add(this.Countrytextbox);
             this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(genderLabel);
             this.Controls.Add(this.genderCheckBox);
@@ -438,6 +447,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.TextBox Countrytextbox;
     }
 }
 
