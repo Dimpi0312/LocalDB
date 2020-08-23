@@ -35,7 +35,7 @@
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label genderLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label CountryLabel;
             this.databaseDataSet = new LocalDB.DatabaseDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new LocalDB.DatabaseDataSetTableAdapters.CustomersTableAdapter();
@@ -70,7 +70,7 @@
             addressLabel = new System.Windows.Forms.Label();
             phoneLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
+            CountryLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
@@ -365,14 +365,14 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "Gender";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
-            // label1
+            // CountryLabel
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(215, 96);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(63, 13);
-            label1.TabIndex = 9;
-            label1.Text = "2nd number";
+            CountryLabel.AutoSize = true;
+            CountryLabel.Location = new System.Drawing.Point(215, 96);
+            CountryLabel.Name = "CountryLabel";
+            CountryLabel.Size = new System.Drawing.Size(43, 13);
+            CountryLabel.TabIndex = 9;
+            CountryLabel.Text = "Country";
             // 
             // Form1
             // 
@@ -386,7 +386,7 @@
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(addressLabel);
             this.Controls.Add(this.addressTextBox);
-            this.Controls.Add(label1);
+            this.Controls.Add(CountryLabel);
             this.Controls.Add(phoneLabel);
             this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(genderLabel);
